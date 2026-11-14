@@ -58,7 +58,7 @@ You can manage purchases, refund requests, Game Center information, and device b
 
 ## This website
 
-The Word Menagerie landing page, privacy policy, and disclosures are served as static pages. These dedicated pages do not embed analytics scripts, advertising scripts, third-party fonts, or tracking pixels. The website hosting and delivery providers may process ordinary request information, such as IP addresses and browser details, to deliver pages and maintain their services. Other sections of stevendnoble.com may use different integrations.
+The Word Menagerie landing page, privacy policy, and disclosures are served as static pages. These dedicated pages do not embed analytics scripts, advertising scripts, third-party fonts, or tracking pixels. The website hosting and delivery providers may process ordinary request information, such as IP addresses and browser details, to deliver pages and maintain their services.
 
 Links to Apple, the publisher’s main website, or email services take you to services with their own privacy practices. The Word Menagerie pages do not collect email through a newsletter or contact form; contacting support opens your email service.
 
