@@ -449,10 +449,7 @@
                                                                                                                                                                                                                                             .game-card h3{
                                                                                                                                                                                                                                               font-size:22px}
                                                                                                                                                                                                                                               .game-card p{
-                                                                                                                                                                                                                                                font-size:13px;
                                                                                                                                                                                                                                                 margin-bottom:10px}
-                                                                                                                                                                                                                                                .game-card .mode{
-                                                                                                                                                                                                                                                  grid-column:2}
                                                                                                                                                                                                                                                   .screens{
                                                                                                                                                                                                                                                     grid-template-columns:1fr;
                                                                                                                                                                                                                                                     gap:40px}
@@ -480,8 +477,6 @@
                                                                                                                                                                                                                                                                     padding-top:35px}
                                                                                                                                                                                                                                                                     .legal h1{
                                                                                                                                                                                                                                                                       font-size:40px}
-                                                                                                                                                                                                                                                                      .legal table{
-                                                                                                                                                                                                                                                                        font-size:12px}
                                                                                                                                                                                                                                                                         .site-footer nav{
                                                                                                                                                                                                                                                                           gap:14px 20px}
                                                                                                                                                                                                                                                                         }
@@ -504,8 +499,92 @@
 /* Keep individual labels together when the navigation wraps. */
 .site-header .brand { flex-shrink: 0; display: flex; align-items: center; min-height: 44px; min-width: 44px; }
 .site-header nav a { white-space: nowrap; }
+
 @media (max-width: 600px) {
   .site-header { align-items: center; }
+
+  .game-card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    align-items: center;
+    row-gap: 12px;
+  }
+
+  .game-card img {
+    grid-row: 1;
+    width: 72px;
+    height: 56px;
+  }
+
+  .game-card p,
+  .game-card .mode {
+    grid-column: 1 / -1;
+  }
+
+  .game-card p {
+    margin: 0;
+  }
+
+  .game-card .mode {
+    font-size: 0.875rem;
+    letter-spacing: 0.04em;
+  }
+
+  .game-card p,
+  .screens p,
+  .hero-note,
+  .price-note,
+  .price-card li,
+  .pricing-fine,
+  .support-email,
+  .faq summary,
+  .faq details p,
+  .legal summary {
+    font-size: 1rem;
+  }
+
+  .faq details {
+    padding-block: 0;
+  }
+
+  .faq summary,
+  .legal summary {
+    min-height: 44px;
+    padding-block: 10px;
+    line-height: 1.5;
+  }
+
+  .faq details p {
+    margin: 0 0 14px;
+    padding-right: 0;
+  }
+
+  .site-footer nav {
+    gap: 0 20px;
+  }
+
+  .site-footer nav a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 0.9375rem;
+  }
+
+  .legal p,
+  .legal li {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  .legal pre {
+    font-size: 0.9375rem;
+    padding: 16px;
+  }
+
+  .legal table {
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
 }
 
 .screen-preview {
